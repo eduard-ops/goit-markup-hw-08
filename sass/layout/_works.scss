@@ -1,0 +1,40 @@
+.section__works {
+  padding-top: 0;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.works {
+  display: flex;
+  margin-left: calc(-1 * #{$marginSetGap});
+}
+.works__item {
+  flex-basis: calc(100% / 3 - #{$marginSetGap});
+  margin-left: $marginSetGap;
+}
+
+.works__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.works__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $rareColor;
+  margin: 0;
+}

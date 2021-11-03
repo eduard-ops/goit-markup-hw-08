@@ -1,0 +1,83 @@
+.command__section {
+  background-color: $sectBgColor;
+  // мобилка
+}
+
+.command {
+  // мобилка
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: calc(-1 * #{$marginSetGap});
+    flex-wrap: wrap;
+  }
+}
+
+.command__item {
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - #{$marginSetGap});
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - #{$marginSetGap});
+  }
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: $rareColor;
+  // мобилка
+}
+
+.command__box-wrapper {
+  padding: 30px 32px;
+}
+
+.command__title {
+  color: $primaryTextColor;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.command__text {
+  color: $secondaryTextColor;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  // мобилка
+  justify-content: center;
+}
+
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-list__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $socLinkColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: $accentColor;
+    fill: $rareColor;
+  }
+}
