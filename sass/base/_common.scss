@@ -3,9 +3,4 @@ body {
   color: $primaryTextColor;
   font-family: $mainFont, sans-serif;
   letter-spacing: 0.03em;
-  overflow-x: hidden;
-}
-
-body.modal-open {
-  overflow: hidden;
 }
