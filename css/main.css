@@ -280,11 +280,6 @@ body {
   color: #212121;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
-  overflow-x: hidden;
-}
-
-body.modal-open {
-  overflow: hidden;
 }
 
 .visually-hidden {
@@ -584,7 +579,6 @@ body.modal-open {
   top: 0;
   z-index: 99;
   overflow-x: scroll;
-  overflow-y: hidden;
 }
 
 .mob-menu.is-open {
