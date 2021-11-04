@@ -283,6 +283,10 @@ body {
   overflow-x: hidden;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -580,6 +584,7 @@ body {
   top: 0;
   z-index: 99;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .mob-menu.is-open {
