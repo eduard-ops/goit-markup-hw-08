@@ -25,6 +25,7 @@
   padding: 48px 15px 48px 40px;
   top: 0;
   z-index: 99;
+  overflow-x: scroll;
   &.is-open {
     display: block;
     display: flex;
