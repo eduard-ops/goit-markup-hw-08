@@ -2,9 +2,7 @@
   background-color: #2f303a;
   text-align: center;
   padding: 118px 0;
-  // max-width: 100%;
-  max-width: 480px;
-  height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -62,15 +60,8 @@
         url(../images/hero-desctop2x.jpg);
     }
   }
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
-    max-width: 1600px;
-    height: 600px;
   }
 }
 

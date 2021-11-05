@@ -23,7 +23,6 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: $socLinkColor;
-  width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -33,10 +32,6 @@
   &:focus {
     fill: $accentColor;
     border-color: $accentColor;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-    height: 92px;
   }
 }
 
