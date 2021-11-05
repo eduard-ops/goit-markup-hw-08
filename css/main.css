@@ -374,6 +374,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px;
 }
 
 .backdrop.is-hidden {
@@ -428,12 +429,6 @@ body {
 .modal-form__input:focus {
   border: 1px solid #2196f3;
   outline: none;
-}
-
-@media screen and (min-width: 479px) {
-  .modal-form__input {
-    width: 370px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -682,6 +677,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px;
 }
 
 .backdrop.is-hidden {
@@ -695,7 +691,6 @@ body {
 }
 
 .modal {
-  width: 100%;
   min-height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -703,19 +698,6 @@ body {
   position: relative;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    min-height: 581px;
-  }
 }
 
 .modal__close-button {
@@ -745,8 +727,6 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .logo_white {
@@ -759,6 +739,12 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 16px;
+  }
 }
 
 .header__container {
@@ -885,8 +871,7 @@ body {
   background-color: #2f303a;
   text-align: center;
   padding: 118px 0;
-  max-width: 480px;
-  height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
@@ -925,17 +910,9 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    max-width: 1600px;
-    height: 600px;
   }
 }
 
@@ -1199,7 +1176,6 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -1209,13 +1185,6 @@ body {
 .clients-list__link:hover, .clients-list__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list__link {
-    width: 170px;
-    height: 92px;
-  }
 }
 
 .clients-list__icon {
@@ -1240,10 +1209,15 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__blok {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts__blok {
     margin-right: 70px;
-    margin-bottom: 0px;
   }
 }
 
@@ -1259,6 +1233,10 @@ body {
   }
 }
 
+.container__contacts {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .container__contacts {
     display: flex;
@@ -1271,6 +1249,7 @@ body {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .container__contacts {
     margin-bottom: 0;
+    margin-right: 93px;
   }
 }
 
@@ -1280,6 +1259,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  margin-top: 20px;
 }
 
 .contacts-footer__item:not(:last-child) {
@@ -1302,13 +1282,8 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 1200px) {
   .footer-social {
-    margin-right: 93px;
     margin-bottom: 0px;
   }
 }
@@ -1396,6 +1371,7 @@ body {
   .footer-form__input {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1437,13 +1413,19 @@ body {
   }
 }
 
-.filter__item {
-  margin-right: 8px;
+.filter__item:not(:last-child) {
   margin-bottom: 15px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 390px) {
+  .filter__item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .filter__item {
+  .filter__item:nth-last-child(-n + 5) {
     margin-bottom: 0px;
   }
 }
