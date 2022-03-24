@@ -708,12 +708,11 @@ body {
 
 .modal__close-button {
   position: absolute;
-  right: 20px;
-  top: 10px;
+  right: 5px;
+  top: 5px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  padding-right: 40px;
   width: 30px;
   height: 30px;
   display: flex;
