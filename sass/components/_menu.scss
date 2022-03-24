@@ -33,7 +33,6 @@
   overflow-x: scroll;
   display: flex;
   visibility: hidden;
-
   &.is-open {
     left: 0;
     visibility: visible;
