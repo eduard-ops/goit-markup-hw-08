@@ -1400,6 +1400,10 @@ body {
   margin-left: 10px;
 }
 
+.section--height {
+  min-height: 1500px;
+}
+
 .filter {
   display: flex;
   flex-wrap: wrap;
