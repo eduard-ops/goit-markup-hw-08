@@ -149,26 +149,36 @@
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter">
             <li class="filter__item">
-              <button type="button" class="filter__button">Все</button>
+              <button data-f="all" type="button" class="filter__button">
+                Все
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Веб-сайты</button>
+              <button data-f="web-site" type="button" class="filter__button">
+                Веб-сайты
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Приложения</button>
+              <button data-f="app" type="button" class="filter__button">
+                Приложения
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Дизайн</button>
+              <button data-f="design" type="button" class="filter__button">
+                Дизайн
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Маркетинг</button>
+              <button data-f="marketing" type="button" class="filter__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <!-- Прптфолио картинки   -->
 
           <ul class="portfolio">
-            <li class="portfolio__item">
+            <li class="portfolio__item web-site">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -215,7 +225,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item">
+            <li class="portfolio__item design">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -262,7 +272,7 @@
               </a>
             </li>
 
-            <li class="portfolio__item">
+            <li class="portfolio__item app">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -310,7 +320,7 @@
               </a>
             </li>
 
-            <li class="portfolio__item">
+            <li class="portfolio__item marketing">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -358,7 +368,7 @@
               </a>
             </li>
 
-            <li class="portfolio__item">
+            <li class="portfolio__item app">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -407,7 +417,7 @@
               </a>
             </li>
 
-            <li class="portfolio__item">
+            <li class="portfolio__item web-site">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -454,7 +464,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item">
+            <li class="portfolio__item design">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -499,7 +509,7 @@
               </a>
             </li>
 
-            <li class="portfolio__item">
+            <li class="portfolio__item marketing">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -544,7 +554,7 @@
               </a>
             </li>
 
-            <li class="portfolio__item">
+            <li class="portfolio__item app">
               <a href="" class="portfolio__link">
                 <div class="portfolio__top-wrapper">
                   <picture>
@@ -614,18 +624,14 @@
                 <li class="contacts-footer__item">
                   <a
                     href="mailto:info@example.com"
-                    class="
-                      contacts-footer__link contacts-footer__communications
-                    "
+                    class="contacts-footer__link contacts-footer__communications"
                     >info@example.com
                   </a>
                 </li>
                 <li class="contacts-footer__item">
                   <a
                     href="tel:+380991111111"
-                    class="
-                      contacts-footer__link contacts-footer__communications
-                    "
+                    class="contacts-footer__link contacts-footer__communications"
                   >
                     +38 099 111 11 11
                   </a>
@@ -687,5 +693,6 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
