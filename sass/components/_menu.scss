@@ -25,12 +25,12 @@
   padding: 48px 15px 48px 40px;
   left: -350px;
   top: 0px;
+  overflow-x: scroll;
   transition: left 500ms cubic-bezier(0.68, 0.55, 0.27, 1.55);
   cursor: pointer;
   z-index: 99;
   border: 1px solid #888;
   border: transparent;
-  overflow-x: scroll;
   display: flex;
   visibility: hidden;
   &.is-open {
