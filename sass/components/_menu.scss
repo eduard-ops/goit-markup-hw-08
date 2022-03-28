@@ -114,6 +114,7 @@
 
 .menu-soc-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-soc__link_decor::after {
