@@ -1551,6 +1551,12 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 335px) {
+  .portfolio__overlay {
+    padding: 0px;
+  }
+}
+
 .portfolio__link:hover .portfolio__overlay,
 .portfolio__link:focus .portfolio__overlay {
   transform: translateY(0);
